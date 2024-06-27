@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="bmi.css" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <h1>BMI Calculator</h1>
+        <div>
+            <label>Mass(kg)</label>
+            <input type="text" id="mass">
+        </div>
+
+        <div>
+            <label>Height(cm or feet-inches)</label>
+            <input type="text" id="height">
+        </div>
+
+        <div>
+            <label>Select unit</label>
+            <select id="unit">
+                <option value="metric">cm and kg</option>
+                <option value="imperial">ft-inches and kg</option>
+            </select>
+        </div>
+
+        <button onclick="calculateBMI()">Calculate BMI</button>
+
+        <div id="result">
+        
+        </div>
+    </div>
+    <script src="bmi.js"></script>
+</body>
+</html>
